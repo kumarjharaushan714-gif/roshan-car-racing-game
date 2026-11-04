@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROSHAN RACING ARENA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <header>
+      <h1>🏎️ ROSHAN RACING ARENA</h1>
+      <p>Race against AI • Multiplayer coming soon</p>
+    </header>
+
+    <div class="hud">
+      <span id="speed">Speed: 0</span>
+      <span id="lap">Lap: 1/3</span>
+      <span id="position">Position: 1st</span>
+    </div>
+
+    <canvas id="race" width="900" height="600"></canvas>
+
+    <div class="controls">
+      <button id="left">⬅️ LEFT</button>
+      <button id="brake">BRAKE</button>
+      <button id="right">RIGHT ➡️</button>
+      <button id="accelerate">ACCELERATE 🚀</button>
+    </div>
+
+    <div class="actions">
+      <button id="restart">🔄 Restart Race</button>
+      <button id="invite">👥 Invite Friend</button>
+    </div>
+
+    <p id="message">Press ACCELERATE to start racing!</p>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

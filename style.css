@@ -1,0 +1,111 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #101827;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#game {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 12px;
+}
+
+h1 {
+  color: #00e5ff;
+  font-size: clamp(22px, 4vw, 36px);
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #b8c5d9;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.hud span {
+  background: #26364c;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 3px solid #00e5ff;
+  border-radius: 10px;
+  background: #267a35;
+  touch-action: none;
+}
+
+.controls,
+.actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 13px 16px;
+  background: #00bcd4;
+  color: #07111c;
+  font-weight: bold;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+button:active {
+  transform: scale(0.96);
+  background: #80f3ff;
+}
+
+#accelerate {
+  background: #35e879;
+}
+
+#brake {
+  background: #ffca58;
+}
+
+#restart {
+  background: #c5b6ff;
+}
+
+#invite {
+  background: #ff8ba7;
+}
+
+#message {
+  min-height: 24px;
+  color: #a8f5c4;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  #game {
+    padding: 7px;
+  }
+
+  button {
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+}
